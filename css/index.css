@@ -1,0 +1,118 @@
+body {
+  background-image: url(../images/9.png);
+  backdrop-filter: blur(2px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+}
+
+ul,li {
+  list-style: none;
+}
+
+.layout {
+  display: grid;
+  grid:auto / 1fr 800px 1fr;
+}
+
+.main {
+  grid-area: 1/2/2/3;
+}
+
+.layout .search {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.layout .search .search-type {
+  display: flex;
+}
+
+.layout .search .search-type .search-tab {
+  border-radius: 4px;
+  padding: 4px 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  margin-right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.search-input {
+  width: 400px;
+  position: relative;
+  margin-top:30px;
+
+}
+
+.search-input > input {
+  width: 100%;
+  line-height: 40px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 0 30px 0 12px;
+  border-radius: 8px;
+}
+
+.search-input > input::placeholder {
+  color: rgb(53, 53, 53);
+}
+
+.icon-search {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tag-list {
+  margin-top: 60px;
+}
+
+.tag-list > .item {
+  margin-top: 20px;
+}
+
+.tag-list .item > h2 {
+  color: #fff;
+}
+
+.tag-list .panel {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: left;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.tag-list .tag {
+  padding: 4px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 8px;
+  font-size: 15px;
+}
+
+.tag-list .tag:nth-of-type(4n+1) {
+  background-color: skyblue;
+}
+
+.tag-list .tag:nth-of-type(4n+2) {
+  background-color: blueviolet;
+}
+
+.tag-list .tag:nth-of-type(4n+3) {
+  background-color: orchid;
+}
+
+.tag-list .tag:nth-of-type(4n+4) {
+  background-color: lightpink;
+}
